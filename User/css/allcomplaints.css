@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+.homeHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    color: black;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.logo {
+    position: static;
+}
+
+img {
+    width: 45%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.showtable {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    width: 100%;
+    /* min-width: 1000px; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.showtable thead tr {
+    background-color: black;
+    color: #ffffff;
+    text-align: left;
+}
+
+.showtable th,
+.showtable td {
+    padding: 12px 15px;
+}
+
+.showtable tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.showtable tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.showtable tbody tr:last-of-type {
+    border-bottom: 2px solid black;
+}
+
+.showtable tbody tr:hover {
+    font-weight: bold;
+    color: black;
+}
+
+.feed {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 10%;
+    border-radius: 10px;
+    border: none;
+    color: black;
+}
+
+.feed:hover {
+    border: 1px solid;
+}
+
+@media (min-width: 500px) and (max-width: 1120px) {
+    .logo {
+        position: static;
+    }
+
+    img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .container {
+        margin-top: 0;
+        margin-left: 50%;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
+
+    .homeHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    img {
+        width: 420px;
+        height: 200px;
+    }
+
+    .container {
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .logo {
+        display: none;
+    }
+
+    .container {
+        margin: 20px 10px 10px 10px;
+    }
+
+    .homeHead {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    margin-top: 110px;
+    margin-left: 57%;
+}
+
+body {
+    background: url('./regis1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+input,
+textarea,
+select {
+    border: 1px solid black;
+    border-radius: 6px;
+    outline: none;
+    font-size: 13px;
+    width: 90%;
+    margin: 11px 0px;
+    padding: 7px;
+}
+
+/* form {
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    margin-left: 15px;
+} */
+.comp-form {
+    width: 390px;
+    top: 55%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.comp-form h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0 10px 0;
+}
+
+.contentForm {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    background: black;
+    color: white;
+}
+
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 28%;
+    padding-right: 5%;
+}
+
+.right {
+    position: absolute;
+    right: 43px;
+    top: 43px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 500px) and (max-width: 1120px) {
+    .logo {
+        position: static;
+    }
+
+    img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .container {
+        margin-top: 0;
+        margin-left: 50%;
+    }
+
+    .comp-form {
+        width: 600px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        color: black;
+    }
+
+    .contentForm {
+        padding: 30px;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 13px;
+        width: 90%;
+        margin: 15px 0px;
+        padding: 8px;
+    }
+
+    body {
+        background-size: cover;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
+
+    .homeHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        position: static;
+    }
+
+    img {
+        width: 420px;
+        height: 200px;
+    }
+
+    .container {
+        margin: 10px;
+    }
+
+    form {
+        margin: 0;
+        font-size: medium;
+    }
+
+    .container2 {
+        display: none;
+    }
+
+    body {
+        background-size: cover;
+    }
+
+    .comp-form {
+        width: 500px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        color: black;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 15px;
+        width: 90%;
+        margin: 15px 0px;
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .logo {
+        display: none;
+    }
+
+    .comp-form {
+        width: 600px;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        color: black;
+    }
+
+    .comp-form {
+        padding: 40px;
+    }
+
+    input,
+    textarea,
+    select {
+        font-size: 15px;
+        width: 90%;
+        margin: 15px 0px;
+        padding: 10px;
+    }
+
+    .container {
+        margin: 20px 10px 10px 10px;
+    }
+
+    .homeHead {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

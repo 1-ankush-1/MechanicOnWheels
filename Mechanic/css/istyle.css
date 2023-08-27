@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100;200;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+
+*,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background: url('css/login7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-form {
+    width: 350px;
+    top: 36%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.contentForm {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.login-form h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 0 10px 0;
+}
+
+.animate {
+    transition: transform 0.5s;
+}
+
+.animate:hover {
+    transform: rotate(180deg);
+}
+
+.login-form label {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.login-form input {
+    font-size: 16px;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+input:focus {
+    outline: none;
+}
+
+.spcbtwinp {
+    margin-top: 10px;
+}
+
+
+.login-form button {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 48%;
+    border-radius: 10px;
+    border: none;
+    background: black;
+    color: white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.homeHead {
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 15px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    color: black;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btngroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {
+    body {
+        width: 100vw;
+    }
+
+    .login-form {
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 400px;
+        top: 30%;
+        left: 50%;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        width: 100vw;
+    }
+
+    .login-form {
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        color: #fff;
+    }
+}
